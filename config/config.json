@@ -1,0 +1,8 @@
+{
+    "cost_per_gb_per_month_usd": 0.15,
+    "currency_conversion_rate": 3.67,
+    "retention_months": 12,
+    "energy_per_gb_kwh": 0.0025,
+    "cooling_multiplier": 0.5,
+    "co2_per_kwh": 0.52
+}
