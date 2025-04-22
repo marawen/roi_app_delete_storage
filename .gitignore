@@ -37,4 +37,14 @@ Thumbs.db
 
 # Project specific
 .env
-*.log 
+*.log
+business_roi_report_*.pdf
+
+# Assets to ignore
+assets/business_roi_summary_*.csv
+assets/savings_*.png
+assets/recommendation_trend.png
+assets/DejaVu*.ttf
+
+# Output files
+outputs/processed_*.csv 
