@@ -1,0 +1,291 @@
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(30, 136, 229, 0.15);
+    transition: transform 0.2s ease;
+    backdrop-filter: blur(6px);
+    min-height: 120px;
+}
+
+.benefit-card:hover {
+    transform: translateY(-3px);
+}
+
+.benefit-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #1E88E5;
+}
+
+.benefit-card p {
+    font-size: 0.9rem;
+    color: #546E7A;
+}
+
+/* Column separator */
+.column-separator {
+    width: 2px;
+    background-color: #1E88E5;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+/* Page container for footer positioning */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #90a4ae;
+    margin-top: auto;
+    padding: 1.5rem 0;
+    width: 100%;
+    border-top: 1px solid rgba(30, 136, 229, 0.15);
+}
+
+/* Login container styles */
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(30, 136, 229, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.login-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1E88E5;
+}
+
+/* Add these styles to your theme.css file */
+
+/* Section headers */
+.section-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1976D2;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Introduction card */
+.intro-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.intro-card h3 {
+    color: #1976D2;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.intro-card ol {
+    margin-bottom: 0;
+}
+
+/* Card headers for parameter sections */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #1976D2;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Upload box styling */
+.upload-box, .placeholder-box {
+    background-color: #f8f9fa;
+    border: 2px dashed #1976D2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-box h4, .placeholder-box h4 {
+    color: #1976D2;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    color: #ccc;
+    margin: 1rem 0;
+}
+
+/* Insight cards for results */
+.insight-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+}
+
+.insight-card ul {
+    padding-left: 1.5rem;
+}
+
+/* Next step prompt */
+.next-step-prompt {
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid #1976D2;
+    text-align: center;
+}
+
+/* Styling for radio buttons navigation */
+div.st-bc {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+div.st-bc .st-bq {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+div.st-bc .st-bq:hover {
+    border-color: #1976D2;
+}
+
+/* Metrics styling */
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #1976D2 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+/* Number input fields */
+input[type="number"] {
+    border-radius: 6px !important;
+    border-color: #e0e0e0 !important;
+}
+
+/* Button styling */
+.stButton button {
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* Primary buttons */
+.stButton button[kind="primary"] {
+    background-color: #1976D2 !important;
+    color: white !important;
+}
+
+.stButton button[kind="primary"]:hover {
+    background-color: #1565C0 !important;
+}
+
+/* Secondary buttons */
+.stButton button[kind="secondary"] {
+    border: 1px solid #1976D2 !important;
+    color: #1976D2 !important;
+    background-color: white !important;
+}
+
+.stButton button[kind="secondary"]:hover {
+    background-color: #e3f2fd !important;
+}
+/* Upload & Process Page Styling */
+
+/* Make metrics more prominent */
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #1976D2 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+/* Improve tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 16px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: rgba(25, 118, 210, 0.1);
+    font-weight: 500;
+}
+
+/* Better container styling */
+.stContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Enhanced button styling */
+.stButton button {
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+.stButton button[kind="primary"] {
+    background-color: #1976D2 !important;
+    color: white !important;
+}
+
+.stButton button[kind="primary"]:hover {
+    background-color: #1565C0 !important;
+}
